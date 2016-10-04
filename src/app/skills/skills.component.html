@@ -1,0 +1,16 @@
+<table>
+    <tr>
+        <th *ngFor="let name of skillFeatures">{{name}}</th>
+    </tr>
+    <tr *ngFor="let skill of skills">
+        <td>{{skill.name}}</td>
+        <td>{{skill.untrained}}</td>
+        <td>{{skill.attrBonus + skill.classSkills + skill.ranks + skill.racialFeats + skill.ACPenalty + skill.misc}}</td>
+        <td>{{skill.attrBonus}}</td>
+        <td>{{skill.attrBase}}</td>
+        <td>{{skill.classSkills}}</td>
+        <td>{{skill.ranks}}</td>
+        <td>{{skill.racialFeats}}</td>
+        <td>{{skill.misc}}</td>
+        <td>{{skill.ACPenalty}}</td>
+    </tr></table>

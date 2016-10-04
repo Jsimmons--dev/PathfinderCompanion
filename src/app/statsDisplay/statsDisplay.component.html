@@ -1,0 +1,37 @@
+<table>
+    <tr>
+        <th *ngFor="let stat of stats"><em>{{(stat)?.abbr}}</em></th>
+    </tr>
+    <tr>
+        <td *ngFor="let stat of stats"><em>{{(stat)?.mod}}</em></td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <th *ngFor="let stat of blockStats"><em>{{(stat)?.abbr}}</em></th>
+    </tr>
+    <tr>
+        <td *ngFor="let stat of blockStats"><em>{{(stat)?.mod}}</em></td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <th *ngFor="let stat of CMStats"><em>{{(stat)?.abbr}}</em></th>
+    </tr>
+    <tr>
+        <td *ngFor="let stat of CMStats"><em>{{(stat)?.mod}}</em></td>
+    </tr>
+</table>
+<p>SAVING THROWS</p>
+<table>
+    <tr>
+        <th *ngFor="let stat of savingStats"><em>{{(stat)?.abbr}}</em></th>
+    </tr>
+    <tr>
+        <td *ngFor="let stat of savingStats"><em>{{(stat)?.mod}}</em></td>
+    </tr>
+</table>
+
+<h3>INITIATIVE</h3>
+<h3>{{initiative}}</h3>
+<feats-component></feats-component>

@@ -1,0 +1,15 @@
+<h2>ABILITIES</h2>
+<table>
+    <tr>
+        <th *ngFor="let name of modNames;">{{name}}</th>
+    </tr>
+    <tr *ngFor="let stat of abilities;">
+        <td>{{(stat)?.abbr}}</td>
+        <td>{{(stat)?.abilityScore}}</td>
+        <td>{{(stat)?.itemBonus}}</td>
+        <td>{{Math.floor(((stat)?.abilityScore-10)/2)}}</td>
+        <td>{{(stat)?.tempScore}}</td>
+        <td>{{(stat)?.tempModifier}}</td>
+    </tr>
+</table>
+<span>Ability Modifier = (Total Ability Score - 10) &#247; 2 (Round down)</span>
