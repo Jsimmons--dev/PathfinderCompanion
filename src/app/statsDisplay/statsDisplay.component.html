@@ -1,9 +1,10 @@
+<div ></div>
 <table>
     <tr>
-        <th *ngFor="let stat of stats"><em>{{(stat)?.abbr}}</em></th>
+        <th *ngFor="let attribute of player?.attributes"><em>{{(attribute)?.abbr}}</em></th>
     </tr>
     <tr>
-        <td *ngFor="let stat of stats"><em>{{(stat)?.mod}}</em></td>
+        <td *ngFor="let attribute of player?.attributes"><em>{{Math.floor((attribute.abilityScore-10)/2)}}></em></td>
     </tr>
 </table>
 <table>

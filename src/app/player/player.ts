@@ -1,4 +1,5 @@
 import { Skill } from "../skill/skill";
+import {Attribute} from "../attribute/attribute";
 export class Player{
 
     constructor(name: string, realName: string, skills: Skill[]) {
@@ -10,4 +11,5 @@ export class Player{
     name: string;
     realName: string;
     skills: Skill[];
+    attributes: Attribute[];
 };

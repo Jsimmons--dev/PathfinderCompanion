@@ -1,8 +1,8 @@
 <table>
     <tr>
-        <th *ngFor="let name of skillFeatures">{{name}}</th>
+        <th *ngFor="let name of skillNames">{{name}}</th>
     </tr>
-    <tr *ngFor="let skill of skills">
+    <tr *ngFor="let skill of player?.skills">
         <td>{{skill.name}}</td>
         <td>{{skill.untrained}}</td>
         <td>{{skill.attrBonus + skill.classSkills + skill.ranks + skill.racialFeats + skill.ACPenalty + skill.misc}}</td>

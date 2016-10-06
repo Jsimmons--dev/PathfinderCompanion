@@ -10,6 +10,7 @@ import {SkillsComponent} from "./skills/skills.component";
 import {AbilitiesComponent} from "./abilities/abilities.component";
 import {StatsDisplayComponent} from "./statsDisplay/statsDisplay.component";
 import {FeatsComponent} from "./feats/feats.component";
+import {Configuration} from "./app.constants";
 
 @NgModule({
   declarations: [
@@ -27,7 +28,7 @@ import {FeatsComponent} from "./feats/feats.component";
     HttpModule,
     appRoutes
   ],
-  providers: [],
+  providers: [Configuration],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

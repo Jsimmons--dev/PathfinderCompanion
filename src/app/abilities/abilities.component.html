@@ -3,7 +3,7 @@
     <tr>
         <th *ngFor="let name of modNames;">{{name}}</th>
     </tr>
-    <tr *ngFor="let stat of abilities;">
+    <tr *ngFor="let stat of player?.abilities;">
         <td>{{(stat)?.abbr}}</td>
         <td>{{(stat)?.abilityScore}}</td>
         <td>{{(stat)?.itemBonus}}</td>
